@@ -1,0 +1,13 @@
+query getMintedEggs(
+  $skip: Int!
+  $first: Int!
+) {
+  eggs (
+    orderBy: tokenId
+    orderDirection: desc
+    skip: $skip
+    first: $first
+  ){
+    tokenId
+  }
+}

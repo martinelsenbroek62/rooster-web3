@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web3-backend:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: web3-backend:test
+    volumes:
+      - ./app:/app
+    env_file:
+      - .env
+    ports:
+      - "8080:3000"

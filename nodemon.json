@@ -1,0 +1,5 @@
+{
+  "exec": "ts-node -r dotenv/config src/index.ts",
+  "watch": ["src", "tsoa.json", "codegen.yml", ".env"],
+  "ext": "ts"
+}
